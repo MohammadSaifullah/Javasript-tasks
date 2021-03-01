@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script type="text/javascript">
+        var tag = [
+            "hero",
+            "villain",
+            "mapla",
+            "machan",
+            "heroine",
+            "director",
+            "dop",
+            "camera",
+            "music",
+            "producer",
+            "theatre",
+            "Teaser",
+            "blockbuster"
+        ];
+
+
+        var n = tag.length;
+
+        function ac(value) {
+            document.getElementById('datalist').innerHTML = '';
+
+            l = value.length;
+            for (var i = 0; i < n; i++) {
+                if (((tag[i].toLowerCase()).indexOf(value.toLowerCase())) > -1) {
+
+                    var node = document.createElement("option");
+                    var val = document.createTextNode(tag[i]);
+                    node.appendChild(val);
+
+                    document.getElementById("datalist").appendChild(node);
+                }
+            }
+        }
+
+    </script>
+
+    <input type="text" list="datalist" onkeyup="ac(this.value)">
+    <datalist id="datalist">
+
+        <option value="hero"></option>
+        <option value="villain"></option>
+        <option value="mapla"></option>
+        <option value="machan"></option>
+        <option value=" heroine"></option>
+        <option value="director"></option>
+        <option value="dop"></option>
+        <option value="camera"></option>
+        <option value="music"></option>
+        <option value="producer"></option>
+        <option value="theatre"></option>
+        <option value="Teaser"></option>
+        <option value="blockbuster"></option>
+    </datalist>
+</body>
+
+</html>
