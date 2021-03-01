@@ -1,0 +1,22 @@
+
+<html>
+<body>
+<script>
+function sumOf(){
+    var x  =document.getElementById("inp").value;
+    var array = x.split(",");
+   var sum = array.reduce(function(a,b){
+      s = parseInt(a);
+      i = parseInt(b);
+        return s+i;
+    });
+    
+     alert(sum);
+}
+</script>
+<form>
+<input type = “text”  id = “inp”>
+</form>
+<button id = “btn” onclick = “sumOf()”></button>
+</body>
+</html>
