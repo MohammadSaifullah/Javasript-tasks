@@ -1,0 +1,10 @@
+<script>
+    var amount = parseInt(prompt("Enter the total amount:"));
+    var percent = parseFloat(prompt("Enter the percentage amount:"));
+    var month = parseInt(prompt("Enter the No.of month amount:"));
+    var interest = (amount * percent) / 100;
+    alert("Your interest is " + interest);
+    var emi = (amount + interest) / month;
+    alert("Your EMI per month " + emi);
+
+</script>

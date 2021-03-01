@@ -1,0 +1,18 @@
+<script>
+    var tam = Number(prompt("Enter tamil mark"));
+    var eng = Number(prompt("Enter english mark"));
+    var mat = Number(prompt("Enter maths mark"));
+
+
+    if (tam <= 100 && eng <= 100 && mat <= 100) {
+        var total = tam + eng + mat;
+        alert(total);
+        var percent = (total / 300) * 100;
+
+        alert(percent);
+    }
+    else {
+        alert("You have entered the number greater then 100");
+    }
+
+</script>

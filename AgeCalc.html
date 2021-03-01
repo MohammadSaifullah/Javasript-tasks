@@ -1,0 +1,9 @@
+<script>
+    var inp = Date.parse(prompt("Enter the Date in MM/DD/YYYY format:"));
+    var monthDiff = Date.now() - inp;
+    var ageDt = new Date(monthDiff);
+    var year = ageDt.getFullYear();
+    var age = year - 1970;
+    alert(age);
+
+</script>

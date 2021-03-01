@@ -1,0 +1,9 @@
+<script>
+    var inp = window.prompt("enter the sentence");
+    var names = inp.split(" ")
+
+    var unique = [...new Set(names)];
+    var joinName = unique.join(" ");
+    alert(joinName);
+
+</script>
